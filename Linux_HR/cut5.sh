@@ -1,3 +1,4 @@
+<<COMMENTS
 Given a tab delimited file with several columns (tsv format) print the first three fields.
 INPUT FORMAT - A tab-separated file with lines of ASCII text only.
 OUTPUT FORMAT - The output should contain N lines. For each line in the input, print the first three fields.
@@ -19,4 +20,7 @@ Sample Output
 5   Philadelphia, Pennsylvania[11]  1,536,471
 
 Code -
+COMMENTS
 cut -d $'\t' -f1-3
+
+ 
