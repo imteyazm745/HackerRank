@@ -83,3 +83,32 @@ Sample Output
 66.6
 COMMENTS
 sort -n
+
+#The text file, with lines re-ordered in descending order (numerically).
+
+sort -n -r
+<<COMMENTS
+INPUT Same
+
+OUTPUT
+66.6
+62.1
+55.6
+47.4
+46.6
+44.6
+43.7
+43.5
+42.7
+9.3
+9.2
+9.1
+4.7
+4.6
+4.5
+4
+2.3
+2.2
+2.1
+2
+COMMENTS
