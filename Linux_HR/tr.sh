@@ -34,5 +34,6 @@ Wor ld
 how are you
 COMMENTS
 
+#solution
 tr -s ' '
  
