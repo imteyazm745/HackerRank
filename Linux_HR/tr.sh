@@ -17,3 +17,22 @@ W
 COMMENTS
 
 tr -d [:a-z:]
+<<COMMENTS
+In a given fragment of text, 
+replace all sequences of multiple spaces with just one space.
+
+Sample Input
+
+He  llo
+Wor  ld
+how  are  you
+
+Sample Output
+
+He llo
+Wor ld
+how are you
+COMMENTS
+
+tr -s ' '
+ 
