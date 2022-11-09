@@ -26,3 +26,10 @@ sort
 
 #when sort command is executed on the file without any option. 
 #It sorts lines in test file and displays sorted output.
+
+#Question -2 
+#order the lines in reverse lexicographical order (i.e. Z-A instead of A-Z).
+
+sort -r
+#The following sort command sorts lines in reverse order and displays sorted output.
+
