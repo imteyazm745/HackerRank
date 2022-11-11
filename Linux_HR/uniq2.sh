@@ -22,6 +22,7 @@ Sample Input
 aa
 aa
 aa
+
 Sample Output
 
 2 00
@@ -30,6 +31,7 @@ Sample Output
 2 02
 1 03
 3 aa 
+
 Explanation
 
 00 is repeated twice
@@ -41,9 +43,23 @@ aa is repeated thrice
  
 COMMENTS
 
-#SOLUTION1 = uniq -c | cut -b 7-
+SOLUTION1 = uniq -c | cut -b 7-
       #OR
-#SOLUTION2 = uniq -c | cut -c 7-  #uniq -c will list the uniq no with the prefix of repeted times cut will remove the 7 spaces prefix to every line
+SOLUTION2 = uniq -c | cut -c 7-  #uniq -c will list the uniq no with the prefix of repeted times cut will remove the 7 spaces prefix to every line
+
+
 
 #If we write only "uniq -c" then it will give us a 6 space before result so we need to print from the 7 caracter
+
+uniq -c
+
+<<COMMENTS
+O/P =
+      2 00
+      2 01
+      2 00
+      2 02
+      1 03
+      3 aa
+COMMENTS
 
