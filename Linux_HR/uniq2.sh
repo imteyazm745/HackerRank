@@ -43,9 +43,12 @@ aa is repeated thrice
  
 COMMENTS
 
-SOLUTION1 = uniq -c | cut -b 7-
+#SOLUTION 1 = 
+uniq -c | cut -b 7-
       #OR
-SOLUTION2 = uniq -c | cut -c 7-  #uniq -c will list the uniq no with the prefix of repeted times cut will remove the 7 spaces prefix to every line
+#SOLUTION 2 = 
+uniq -c | cut -c 7-
+#uniq -c will list the uniq no with the prefix of repeted times cut will remove the 7 spaces prefix to every line
 
 
 
