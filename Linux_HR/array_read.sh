@@ -34,3 +34,18 @@ The entire array has been displayed.
 
 COMMENTS
 
+i=0
+n=10
+
+#read a[@]
+while [[ $i -lt $n ]]
+do
+    read a[$i]
+
+#   i=`expr $i + 1`
+
+((i++))
+done
+
+echo ${a[*]}
+
