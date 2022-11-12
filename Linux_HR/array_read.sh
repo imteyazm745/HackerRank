@@ -34,6 +34,7 @@ The entire array has been displayed.
 
 COMMENTS
 
+#SOLUTION 1
 i=0
 n=10
 
@@ -48,4 +49,16 @@ do
 done
 
 echo ${a[*]}
+
+#SOLUTION 2
+
+i=1;
+while read line
+do
+    a[i]=$line;
+    i=$((i+1));
+done
+echo "${a[@]}";
+
+
 
