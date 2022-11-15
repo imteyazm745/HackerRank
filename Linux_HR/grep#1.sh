@@ -52,4 +52,4 @@ We have retained and displayed only those lines that contain the word 'the'. A l
 
 COMMENTS
 
-grep -w "the"
+grep -w "the"   # -w : Match whole word
