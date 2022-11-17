@@ -44,3 +44,4 @@ Consecutively repeated digits have been highlighted in box brackets. The last ca
 COMMENTS
 
 grep "\([0-9]\) *\1"
+#It will display the required lines after filtering with grep, without any changes to their relative ordering in the input file.
