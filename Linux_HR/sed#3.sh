@@ -72,3 +72,6 @@ All occurrences of 'thy' have been highlighted by wrapping them up in brace brac
 
 COMMENTS
 
+sed -e 's/thy /{thy} /g' -e 's/Thy /{Thy} /g'
+
+
