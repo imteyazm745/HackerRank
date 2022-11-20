@@ -84,3 +84,5 @@ has been transformed to:
 "your self your foe, to your sweet self too cruel:"
 
 COMMENTS
+
+sed 's/thy/your/gi'
