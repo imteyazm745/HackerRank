@@ -40,3 +40,6 @@ The given input file has been reshaped as required.
 COMMENTS
 
 paste - - - 
+#three consecutive rows are folded into one, and separated by tab.
+
+#Solution2 = paste -d'\t' - - -
