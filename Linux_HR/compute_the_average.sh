@@ -1,17 +1,13 @@
 <<COMMENTS
 
-Given  integers, compute their average, rounded to three decimal places.
+Given N integers, compute their average, rounded to three decimal places.
 
 Input Format
-The first line contains an integer, .
-Each of the following  lines contains a single integer.
+The first line contains an integer, N.
+Each of the following N lines contains a single integer.
 
 Output Format
-Display the average of the  integers, rounded off to three decimal places.
-
-Input Constraints
-
- ( refers to elements of the list of integers for which the average is to be computed)
+Display the average of the N integers, rounded off to three decimal places.
 
 Sample Input
 
