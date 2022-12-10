@@ -1,5 +1,4 @@
 """
-
 Task
 The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
 
@@ -33,4 +32,3 @@ if __name__ == '__main__':
     print(a+b)
     print(a-b)
     print(a*b)
-
