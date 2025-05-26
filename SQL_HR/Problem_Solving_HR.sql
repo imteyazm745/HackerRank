@@ -9,9 +9,6 @@ FROM STATION
 WHERE LAT_N < 137.2345;
 
 -- Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than . Round your answer to  decimal places.
-/*
-Enter your query here.
-*/
 SELECT ROUND(Long_W, 4)
 FROM STATION 
 WHERE LAT_N = (
@@ -29,3 +26,11 @@ WHERE LAT_N = (
     WHERE LAT_N > 38.7780
 );
 
+-- Query the Western Longitude (LONG_W)where the smallest Northern Latitude (LAT_N) in STATION is greater than 38.7780. Round your answer to 4 decimal places.
+SELECT ROUND(LONG_W, 4)
+FROM STATION
+WHERE LAT_N = (
+    SELECT MIN(LAT_N)
+    FROM STATION
+    WHERE LAT_N > 38.7780
+);
