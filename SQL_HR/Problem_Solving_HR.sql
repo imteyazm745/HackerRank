@@ -34,3 +34,16 @@ WHERE LAT_N = (
     FROM STATION
     WHERE LAT_N > 38.7780
 );
+
+
+-- Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:
+SELECT 
+    Node,
+    CASE
+        WHEN P_id IS NULL THEN 'Root'
+        WHEN Left IS NULL AND Right IS NULL THEN 'Leaf'
+        ELSE 'Inner'
+    END AS NodeType
+FROM BinaryTree
+ORDER BY Node;
+
