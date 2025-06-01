@@ -26,3 +26,17 @@ if __name__ == '__main__':
     n = int(input())
     for i in range(0, n):
         print(i*i)
+
+
+
+# Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False.
+if (year % 4 == 0):
+        if (year % 100 == 0):
+            if (year % 400 == 0):
+                leap = True
+            else:
+                leap = False
+        else:
+            leap = True
+    else:
+        leap = False
