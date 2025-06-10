@@ -86,6 +86,32 @@ SELECT ROUND(
 FROM STATION
 
 
+"""
+Given a company hierarchy with the following tables:
 
+Company(company_code, founder)
+Lead_Manager(lead_manager_code, company_code)
+Senior_Manager(senior_manager_code, lead_manager_code, company_code)
+Manager(manager_code, senior_manager_code, lead_manager_code, company_code)
+Employee(employee_code, manager_code, senior_manager_code, lead_manager_code, company_code)
 
+Write a query to return for each company:
+company_code
+founder
+total number of distinct lead managers, senior managers, managers, and employees
+"""
+SELECT
+    c.company_code,
+    c.founder,
+    COUNT(DISTINCT lm.lead_manager_code) AS total_lead_managers,
+    COUNT(DISTINCT sm.senior_manager_code) AS total_senior_managers,
+    COUNT(DISTINCT m.manager_code) AS total_managers,
+    COUNT(DISTINCT e.employee_code) AS total_employees
+FROM company c
+LEFT JOIN lead_manager lm ON c.company_code = lm.company_code
+LEFT JOIN senior_manager sm ON c.company_code = sm.company_code
+LEFT JOIN manager m ON c.company_code = m.company_code
+LEFT JOIN employee e ON c.company_code = e.company_code
+GROUP BY c.company_code, c.founder
+ORDER BY c.company_code;
 
