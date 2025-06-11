@@ -115,3 +115,17 @@ LEFT JOIN employee e ON c.company_code = e.company_code
 GROUP BY c.company_code, c.founder
 ORDER BY c.company_code;
 
+-- A median is defined as a number separating the higher half of a data set from the lower half. Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to 4 decimal places.
+WITH ordered AS (
+    SELECT LAT_N,
+           ROW_NUMBER() OVER (ORDER BY LAT_N) AS rn,
+           COUNT(*) OVER () AS total_rows
+    FROM STATION
+)
+SELECT ROUND(AVG(LAT_N), 4) AS median
+FROM ordered
+WHERE rn IN (
+    (total_rows + 1) / 2,
+    (total_rows + 2) / 2
+);
+
